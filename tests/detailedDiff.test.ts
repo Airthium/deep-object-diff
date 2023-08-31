@@ -1,8 +1,8 @@
 import detailedDiff from '../src/detailed'
 
 describe('.detailedDiff', () => {
-  describe('base case', () => {
+  test('base case', () => {
     const detailed = detailedDiff({}, {})
-    expect(detailed).toEqual({})
+    expect(detailed).toEqual({ added: {}, deleted: {}, updated: {} })
   })
 })
