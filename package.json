@@ -1,6 +1,6 @@
 {
   "name": "@airthium/deep-object-diff",
-  "version": "1.0.27",
+  "version": "1.0.28",
   "description": "Deep diffs two objects, including nested structures of arrays and objects, and return the difference.",
   "homepage": "https://github.com/Airthium/deep-object-diff",
   "type": "module",
@@ -16,12 +16,12 @@
   "bugs": {
     "url": "https://github.com/Airthium/deep-object-diff/issues"
   },
-  "main": "dist/src/index.js",
+  "main": "dist/index.js",
   "scripts": {
     "depcheck": "depcheck . --ignores @types/*,@swc/jest",
     "prettier": "prettier -l '**/*.{js,ts,json,md}'",
     "test": "jest --silent --coverage",
-    "build": "swc src -d dist"
+    "build": "swc src -d dist --strip-leading-paths"
   },
   "devDependencies": {
     "@swc/cli": "0.3.5",
